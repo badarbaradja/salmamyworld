@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<9>
 
     <meta charset="UTF-8">
     <!-- SEO Meta Tags -->
@@ -980,8 +980,23 @@
                 }
 
                 // Trigger the same actions as double click
-                audioManager.playOnly();
-                cameraController.triggerAnimation();
+                            // Trigger the same actions as double click
+                                        audioManager.playOnly();
+                                                    cameraController.triggerAnimation();
+
+                                                                // --- KODE TAMBAHAN UNTUK MENGHILANGKAN TULISAN DI HP ---
+                                                                            const overlayInst = document.getElementById("overlayInstruction");
+                                                                                        if(overlayInst) {
+                                                                                                        overlayInst.style.opacity = "0";
+                                                                                                                        setTimeout(() => {
+                                                                                                                                            overlayInst.style.display = "none";
+                                                                                                                                                            }, 500);
+                                                                                                                                                                        }
+                                                                                                                                                                                    // --------------------------------------------------------
+
+                                                                                                                                                                                                // Reset tap count
+                                                                                                                                                                                                            tapCount = 0;
+                                                                                                                                                                                                            
 
                 // Reset tap count
                 tapCount = 0;
